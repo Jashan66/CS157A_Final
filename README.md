@@ -13,4 +13,9 @@ Aleatha Mesa
 	-Setting up web app
 	-Some queries
 
+Jashan Rahal
+	-defined entities & attributes
+ 	-collected dummy data
+  	-added some routes
+   	-added some queries
 
