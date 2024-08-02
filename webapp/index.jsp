@@ -11,5 +11,7 @@
 <a href="Staff">See our staff</a>
 <a href="Students">Student List</a>
 <a href="Reports">Check Student Grades</a>
+<a href="TopPerformers">See our Honor Roll Students</a>
+<a href="TotalEnrollment">See our Total Enrollment</a>
 </body>
 </html>
