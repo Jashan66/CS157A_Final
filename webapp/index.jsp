@@ -10,5 +10,6 @@
 <h1>Welcome to NewTown Elementary</h1>
 <a href="Staff">See our staff</a>
 <a href="Students">Student List</a>
+<a href="Reports">Check Student Grades</a>
 </body>
 </html>
