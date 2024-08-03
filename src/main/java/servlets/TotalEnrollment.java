@@ -33,7 +33,15 @@ public class TotalEnrollment extends HttpServlet {
             resultSet = statement.executeQuery();
 
             out.println("<html><body>");
-            out.println("<h1>Total Enrollment: " + resultSet.getInt("total") + "</h1>");
+            out.println("<h1>Total Enrollment</h1>");
+
+            if (resultSet.next()) {
+                int total = resultSet.getInt("total");
+                out.println("<h2>Total number of students enrolled: " + total + "</h2>");
+            } else {
+                out.println("<p>No enrollment data available.</p>");
+            }
+
 
 
 

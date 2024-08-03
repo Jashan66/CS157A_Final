@@ -39,7 +39,7 @@ public class ReportsServlet extends HttpServlet {
             while (resultSet.next()) {
                 int studentId = resultSet.getInt("StudentID");
                 String grade = resultSet.getString("GradeInClass");
-                String desc = resultSet.getString("Decription");
+                String desc = resultSet.getString("Description");
 
                 out.println("<tr>");
                 out.println("<td>" + studentId + "</td>");
