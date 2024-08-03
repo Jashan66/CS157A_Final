@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import utility.DatabaseUtility;
 
 @WebServlet ("/Reports")
-public class StudentServlet extends HttpServlet {
+public class ReportsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");

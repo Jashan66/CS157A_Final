@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import utility.DatabaseUtility;
 
 @WebServlet("/TotalEnrollment")
-public class StaffServelt extends HttpServlet {
+public class TotalEnrollment extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
