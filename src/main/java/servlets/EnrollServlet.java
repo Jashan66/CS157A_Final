@@ -26,7 +26,7 @@ public class EnrollServlet extends HttpServlet{
 
         out.println("<html><body>");
         out.println("<h1>Enroll Student</h1>");
-        out.println("<form method='POST' action='/Enroll'>");
+        out.println("<form method='POST' action='Enroll'>");
         out.println("First Name: <input type='text' name='firstName' required><br><br>");
         out.println("Last Name: <input type='text' name='lastName' required><br><br>");
         out.println("Grade: <select name='grade' required>");
@@ -37,7 +37,7 @@ public class EnrollServlet extends HttpServlet{
         out.println("Email: <input type='email' name='email' required><br><br>");
         out.println("Address: <input type='text' name='address' required><br><br>");
         out.println("Date of Birth (m/dd/yyyy): <input type='text' name='dob' required><br><br>");
-        out.println("<button type='submit'>Enroll</button>");
+        out.println("<input type='submit' value='Enroll'>");
         out.println("</form>");
         out.println("<a href='index.jsp'>Home</a>");
         out.println("</body></html>");
@@ -45,7 +45,6 @@ public class EnrollServlet extends HttpServlet{
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("First");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         Connection connection = null;
@@ -62,14 +61,15 @@ public class EnrollServlet extends HttpServlet{
             connection = DatabaseUtility.getConnection();
 
             // Get the new max ID
-            String getID = "SELECT COALESCE(MAX(id), 0) + 1 AS newId FROM students";
+            String getID = "SELECT COALESCE(MAX(StudentID), 0) + 1 AS newId FROM students";
             statement = connection.prepareStatement(getID);
             resultSet = statement.executeQuery();
+            System.out.println(resultSet);
             resultSet.next();
             int newId = resultSet.getInt("newId");
 
             // Insert the  studen
-            String sql = "INSERT INTO students (StudentId, FirstName, LastName, DateOfBirth, GradeLevel, Address, Email) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO students (StudentID, FirstName, LastName, DateOfBirth, GradeLevel, Address, Email) VALUES (?, ?, ?, ?, ?, ?, ?)";
             statement = connection.prepareStatement(sql);
             statement.setInt(1, newId);
             statement.setString(2, firstName);

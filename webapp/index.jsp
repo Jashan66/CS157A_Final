@@ -13,14 +13,15 @@
 <br>
 
 <div style="text-align: center">
-    <a href="Staff">See our staff</a>
-    <a href="Students">Student List</a>
-    <a href="Reports">Check Student Performance</a>
-    <a href="TopPerformers">See our Honor Roll Students</a>
-    <a href="TotalEnrollment">See our Total Enrollment</a>
-    <a href="Clubs">School Clubs</a>
-    <a href="Courses">Course Catalog</a>
-    <a href="StudentClass">Check Student's Class Enrollment</a>
+    <a href="TotalEnrollment">See our Total Enrollment</a> - <a href="Staff">Staff List</a> -  <a href="Students">Student List</a>
+    <br>
+    <br>
+    <a href="Reports">Check Student Performance</a> - <a href="TopPerformers">See our Honor Roll Students</a>
+    <br>
+    <br>
+    <a href="Clubs">School Clubs</a> -  <a href="Courses">Course Catalog</a> -  <a href="StudentClass">Check Student's Class Enrollment</a>
+
+
 </div>
 </body>
 </html>
