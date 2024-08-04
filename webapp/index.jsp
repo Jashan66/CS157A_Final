@@ -19,6 +19,7 @@
     <a href="TopPerformers">See our Honor Roll Students</a>
     <a href="TotalEnrollment">See our Total Enrollment</a>
     <a href="Clubs">School Clubs</a>
+    <a href="Courses">Course Catalog</a>
 </div>
 </body>
 </html>
