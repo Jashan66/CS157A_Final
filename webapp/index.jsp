@@ -20,6 +20,7 @@
     <a href="TotalEnrollment">See our Total Enrollment</a>
     <a href="Clubs">School Clubs</a>
     <a href="Courses">Course Catalog</a>
+    <a href="StudentClass">Check Student's Class Enrollment</a>
 </div>
 </body>
 </html>
