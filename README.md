@@ -19,3 +19,8 @@ Jashan Rahal
   	-added some routes
    	-added some queries
 
+Edward Khant
+	- project context ideation
+ 	- project proposal composition
+  	- project final report composition
+
