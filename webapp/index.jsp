@@ -20,6 +20,9 @@
     <br>
     <br>
     <a href="Clubs">School Clubs</a> - <a href="Courses">Course Catalog</a> -  <a href="StudentClass">Check Student's Class Enrollment</a>
+    <br>
+    <br>
+    <h3 style="text-align: center">To update a students information click <a href="UpdateStudent"> here</a>.</h3>
 
 
 </div>

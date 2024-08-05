@@ -18,7 +18,6 @@ import utility.DatabaseUtility;
 @WebServlet("/Enroll")
 public class EnrollServlet extends HttpServlet{
 
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
